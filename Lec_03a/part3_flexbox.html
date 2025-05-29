@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    *{
+        box-sizing: border-box;
+    }
+    .parent{
+        height: 30rem;
+        width: 30rem;
+        background-color: rebeccapurple;
+        /* layout ke features */
+        display: flex;
+       /*  display: flex;  -->this simply put all the boxes in the same line.
+              means block element also behave as inline element after using this tag */
+        
+        /* horizontally alignments property */
+        /* justify-content: flex-start;      */
+        /* justify-content: center;      */
+        /* justify-content: end;           */
+        /* justify-content: space-evenly;   */
+        /* justify-content: space-between; */
+        /* justify-content: space-around; */
+
+        /* vertically alignment property or align items(known as) */
+        /* align-items: center; */
+        /* align-items: flex-start; */
+        /* align-items: flex-end; */
+        
+
+
+            
+        
+    }
+    .child{
+        color:rgb(179, 40, 40);
+        font-size: 2rem;
+        background-color: lightcoral;
+        font-weight: bold;
+        border: 1px solid green;
+        font-family: sans-serif;
+        height: 100px;
+        width: 100px;
+
+    }
+    .one{
+        align-self: center;
+    }
+    .two{
+        align-self: flex-end;
+    }
+</style>
+<body>
+    <h2>Flexbox Example</h2>
+    <div class="parent">
+        <div class="child one">child 1</div>
+        <div class="child two">child 2</div>
+        <div class="child three">child 3</div> 
+    </div>
+</body>
+</html>
