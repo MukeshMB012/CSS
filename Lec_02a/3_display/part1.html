@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        
+        .block{
+            background-color: lightblue;
+            /* userdefined height: works */
+            height: 100px;
+            /* userdefined width: works */
+            width: 100px;
+            /* next element -> newline */
+            /* padding-> in all directions */
+            padding-top: 10px;
+            padding-bottom: 10px;
+            padding-left: 10px;
+            padding-right: 10px;
+
+            /* margin -> in all direction*/
+            margin-top: 10px;
+            margin-bottom: 10px;
+            margin-left: 10px;
+            margin-right: 10px;
+
+            /* border-> in all directions */
+            border-top: 2px solid red;
+            border-bottom: 2px solid red;
+            border-left: 2px solid red;
+            border-right: 2px solid red;
+
+
+
+        }
+        .inline_block{
+            background-color: mediumorchid;
+            /* userdefined height: works */
+            height: 100px;
+            /* userdefined width: works */
+            width:100px;
+            display: inline-block;
+
+             /* padding-> in all directions */
+            padding-top: 10px;
+            padding-bottom: 10px;
+            padding-left: 10px;
+            padding-right: 10px;
+
+            /* margin -> in all direction*/
+            margin-top: 10px;
+            margin-bottom: 10px;
+            margin-left: 10px;
+            margin-right: 10px;
+
+            /* border-> in all directions */
+            border-top: 2px solid red;
+            border-bottom: 2px solid red;
+            border-left: 2px solid red;
+            border-right: 2px solid red;
+        }
+        .inline{
+            background-color: lightgreen;
+            /* userdefined height: not works */
+            height: 100px;
+            /* userdefined width: not works */
+            width:100px;
+            display: inline;
+
+            /* padding-> in all directions */
+            padding-top: 10px;
+            padding-bottom: 10px;
+            padding-left: 10px;
+            padding-right: 10px;
+
+            /* border-> in all directions */
+            border-top: 2px solid red;
+            border-bottom: 2px solid red;
+            border-left: 2px solid red;
+            border-right: 2px solid red;
+
+            /* margin -> only works hordizontally and not vertically */
+            /* margin-top: 10px;
+            margin-bottom: 10px; */
+            margin-left: 10px;
+            margin-right: 10px;
+
+            /* next elements -> same line me aa jata hai */
+
+        }
+
+
+    </style>
+</head>
+<body>
+    <h2>hello from h2</h2>
+    <!-- block level element -->
+    <!-- <div class="block">Hello Hi how are you</div>
+    <span>Hello</span> -->
+
+    <!-- inline element-> style a part of a line -->
+    <!-- <div class="inline">I am inline</div> -->
+
+    <!-- inline block element -->
+    <div class="inline_block">I am inline block</div>
+    <div class="inline_block">I am inline block</div>
+    
+</body>
+</html>

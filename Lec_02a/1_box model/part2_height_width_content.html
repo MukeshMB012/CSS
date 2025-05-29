@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    
+    h1{
+        text-align: center;
+        font-family: sans-serif;
+        color: darkorange;
+    }
+    .box1{
+         background-color: lightblue;
+         margin-bottom: 10px;
+         width: 200px;
+         height: 200px;
+
+
+/*        
+        element width: width + borderL + borderR + paddingL + paddingR
+        element width: 100px + 8px + 8px + 32px + 32px
+
+        element length: length + borderT + borderB + paddingT + paddingB
+        element length: 100px + 8px + 8px + 32px + 32px
+          */
+    }
+    .content-box{
+        box-sizing: content-box;
+        padding: 10px;
+        border: 10px solid red;
+
+    }
+    .border-box{
+        box-sizing: border-box;
+        padding: 10px;
+        border: 10px solid red;
+    }
+   
+</style>
+<body>
+    <h1>Box Model Example</h1>
+    <div class="box1 content-box">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+      Velit blanditiis est fugit qui natus veritatis dolore earum voluptate, alias error.
+    </div>
+    <div class="box1 border-box">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+      Velit blanditiis est fugit qui natus veritatis dolore earum voluptate, alias error.
+    </div>
+    
+</body>
+</html>
+
+<!-- 
+element
+height
+  * every element will have it's height given by the content.
+  * user defined height can also be given
+
+width
+  *Auto:
+    ->inline -> required width(a, ing, span)
+    block level -> full width parent
+  *userDefine: user can also put measurement for the width.
+-->
+
+<!--      
+    box-sizing: content-box;
+        element width: content width(userDefined width) + borderL + borderR + paddingL + paddingR
+        element length: content length(userDefined length) + borderT + borderB + paddingT + paddingB
+
+
+    box-sizing: border-box;  - we choose border box over content box 
+        content width: (userDefined width) - (borderL + borderR + paddingL + paddingR)
+        content length: (userDefined length) - (borderT + borderB + paddingT + paddingB)
+        element width: userDefined width
+        element length: userDefined length
+
+        *{
+       box-sizing: border-box;
+      }
+          
+        
+        
+        -->

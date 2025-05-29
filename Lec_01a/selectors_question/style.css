@@ -1,0 +1,19 @@
+/* 1*/
+p{
+    color: red;
+}
+
+/* 2 */
+.bggreen{
+    background-color: lightgreen;
+}
+
+/* 3 */
+#special{
+    text-decoration-line: underline;
+}
+
+/* 4 */
+*{
+    font-family: sans-serif;
+}

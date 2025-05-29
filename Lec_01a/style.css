@@ -1,0 +1,54 @@
+/* to provide styling -> select an element */
+/* (*{}):- this is star selector, which is universal and applied to all the selector */
+
+*{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* element selectors: these h2, span, p are the element selectors */
+h2 {
+    /* color */
+    color: lightgreen;
+    background-color: gray;
+    /* text */
+    font-size: 1 rem;
+    
+}
+
+span {
+    font-size: 2rem;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+p{
+    font-weight: bold;
+    text-decoration: underline;
+    font-style: italic;   
+    line-height: 2rem;  
+    /* this basically decide the space between the text */
+}
+
+/* class selector */
+.para{
+    color: red;
+}
+
+/* id selector */
+#unique1{
+    color: lightblue;
+    background-color: green;
+}
+#unique2{
+    color: lightblue;
+    background-color: rgb(39, 45, 217);
+}
+
+/* in css(or inside style in html) you don't need to give spaces between two classes,
+but in html you need to give spaces to these classes when you declare them*/
+.para.some{
+    background-color: gray;
+}
+/* NOTES:-
+1.when two classes are there for one element:- .a1.a2 (no spaces between them)
+2.when two classes are there for one element but these are given at different level of descendent:- .a1 .a2 ( spaces between them)
+*/
